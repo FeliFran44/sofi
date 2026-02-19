@@ -17,29 +17,22 @@ export default function Programas() {
     'Contacto directo con Sofi todo el mes',
     '1 videollamada de bienvenida',
     'Desafíos semanales',
+    'Acceso desde una app con videos explicativos para que puedas entrenar de forma clara desde donde estés',
   ]
 
-  const fullBodyIdealPara = [
-    'Entrenás en gimnasio o en tu casa',
-    'Querés fuerza, tono y funcionalidad',
-    'Buscás una rutina clara y bien estructurada',
+  const tuPlanDescripcion = 'Entrenamiento personalizado según tu objetivo, nivel y disponibilidad. Sin plan de nutrición. Con ajustes y acompañamiento durante el proceso.'
+
+  const tuPlanIncluye = [
+    'Rutina de entrenamiento personalizada',
+    'Ajustes durante el proceso',
+    'Acompañamiento constante',
+    'Acceso desde una app con videos explicativos para que puedas entrenar de forma clara desde donde estés',
   ]
 
-  const fullBodyIncluye = [
-    'Rutina full body',
-    'Ejercicios explicados',
-    'Organización simple y efectiva',
-  ]
-
-  const piernasIdealPara = [
-    'Querés fortalecer tren inferior',
-    'Buscás mejorar fuerza y estabilidad',
-    'Querés llevar tus piernas al siguiente nivel',
-  ]
-
-  const piernasIncluye = [
-    'Rutina enfocada en piernas y glúteos',
-    '3 días de entrenamiento',
+  const planBaseIncluye = [
+    'Rutina de entrenamiento base',
+    'Ejercicios fundamentales',
+    'Acceso desde una app con videos explicativos para que puedas entrenar de forma clara desde donde estés',
   ]
 
   return (
@@ -131,7 +124,7 @@ export default function Programas() {
               </div>
               
               <a
-                href="https://wa.me/5491112345678?text=Hola%20Sofi!%20Quiero%20sumarme%20a%20ÍNTEGRO"
+                href="https://wa.me/598092333305?text=Hola%20Sofi!%20Quiero%20sumarme%20a%20ÍNTEGRO"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-10 py-4 bg-white text-sage-600 rounded-full hover:bg-beige-50 transition-all duration-300 font-semibold shadow-xl text-lg"
@@ -155,34 +148,26 @@ export default function Programas() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-            {/* Full Body */}
+            {/* Tu Plan */}
             <div className="bg-beige-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
                   <Dumbbell className="text-sage-600" size={28} />
                 </div>
                 <h4 className="font-serif text-3xl text-gray-900">
-                  Full body
+                  Tu Plan
                 </h4>
               </div>
 
               <div className="space-y-6">
-                <div>
-                  <h5 className="font-semibold text-gray-900 mb-3">Ideal para vos si:</h5>
-                  <div className="space-y-2">
-                    {fullBodyIdealPara.map((item, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <span className="text-sage-600">•</span>
-                        <span className="text-gray-700">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  {tuPlanDescripcion}
+                </p>
 
                 <div>
                   <h5 className="font-semibold text-gray-900 mb-3">Incluye:</h5>
                   <div className="space-y-2">
-                    {fullBodyIncluye.map((item, index) => (
+                    {tuPlanIncluye.map((item, index) => (
                       <div key={index} className="flex items-start gap-2">
                         <Check className="text-sage-600 flex-shrink-0 mt-0.5" size={18} />
                         <span className="text-gray-700">{item}</span>
@@ -192,7 +177,7 @@ export default function Programas() {
                 </div>
 
                 <a
-                  href="https://wa.me/5491112345678?text=Hola%20Sofi!%20Quiero%20el%20plan%20Full%20Body"
+                  href="https://wa.me/598092333305?text=Hola%20Sofi!%20Quiero%20Tu%20Plan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 bg-sage-600 text-white rounded-full hover:bg-sage-700 transition-all duration-300 font-medium"
@@ -202,34 +187,22 @@ export default function Programas() {
               </div>
             </div>
 
-            {/* Piernas & Glúteos */}
+            {/* Plan Base */}
             <div className="bg-beige-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
                   <Dumbbell className="text-sage-600" size={28} />
                 </div>
                 <h4 className="font-serif text-3xl text-gray-900">
-                  Piernas & Glúteos
+                  Plan Base
                 </h4>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h5 className="font-semibold text-gray-900 mb-3">Ideal para vos si:</h5>
-                  <div className="space-y-2">
-                    {piernasIdealPara.map((item, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <span className="text-sage-600">•</span>
-                        <span className="text-gray-700">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
                   <h5 className="font-semibold text-gray-900 mb-3">Incluye:</h5>
                   <div className="space-y-2">
-                    {piernasIncluye.map((item, index) => (
+                    {planBaseIncluye.map((item, index) => (
                       <div key={index} className="flex items-start gap-2">
                         <Check className="text-sage-600 flex-shrink-0 mt-0.5" size={18} />
                         <span className="text-gray-700">{item}</span>
@@ -239,7 +212,7 @@ export default function Programas() {
                 </div>
 
                 <a
-                  href="https://wa.me/5491112345678?text=Hola%20Sofi!%20Quiero%20el%20plan%20Piernas%20y%20Glúteos"
+                  href="https://wa.me/598092333305?text=Hola%20Sofi!%20Quiero%20el%20Plan%20Base"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 bg-sage-600 text-white rounded-full hover:bg-sage-700 transition-all duration-300 font-medium"
@@ -254,18 +227,18 @@ export default function Programas() {
           <div className="bg-gradient-to-br from-beige-50 to-sage-50 rounded-3xl p-8 md:p-12 text-center max-w-3xl mx-auto">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-xl text-gray-900">
-                  Si no sabés qué programa elegir,
+                <p className="text-xl font-semibold text-gray-900">
+                  Todos los programas son online
+                </p>
+                <p className="text-xl text-gray-700">
+                  Si no sabes cuál elegir
                 </p>
                 <p className="text-xl font-semibold text-sage-700">
-                  escribime y lo vemos juntas
+                  Escribime y lo vemos juntas
                 </p>
               </div>
-              <p className="text-lg text-gray-700">
-                No estás sola en este proceso.
-              </p>
               <a
-                href="https://wa.me/5491112345678?text=Hola%20Sofi!%20Necesito%20ayuda%20para%20elegir%20un%20programa"
+                href="https://wa.me/598092333305?text=Hola%20Sofi!%20Necesito%20ayuda%20para%20elegir%20un%20programa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
