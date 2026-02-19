@@ -44,11 +44,11 @@ export default function Contacto() {
                   <span className="font-medium">@sofitarela</span>
                 </a>
                 <a
-                  href="mailto:sofi@sofitarela.com"
+                  href="mailto:tarelasofia19@gmail.com"
                   className="inline-flex items-center gap-3 text-gray-700 hover:text-sage-600 transition-colors group"
                 >
                   <Mail size={24} />
-                  <span className="font-medium">sofi@sofitarela.com</span>
+                  <span className="font-medium">tarelasofia19@gmail.com</span>
                 </a>
               </div>
             </div>

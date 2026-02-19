@@ -75,9 +75,13 @@ export default function Programas() {
                   <h3 className="font-serif text-5xl md:text-6xl mb-3">
                     ÍNTEGRO
                   </h3>
-                  <p className="text-xl text-sage-100 font-light">
+                  <p className="text-xl text-sage-100 font-light mb-4">
                     Programa de entrenamiento, hábitos y nutrición consciente
                   </p>
+                  <div className="inline-flex items-baseline gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
+                    <span className="text-4xl font-bold text-white">$5.000</span>
+                    <span className="text-lg text-sage-100">UYU</span>
+                  </div>
                 </div>
 
                 {/* Ideal para vos si */}
@@ -150,13 +154,19 @@ export default function Programas() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
             {/* Tu Plan */}
             <div className="bg-beige-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
-                  <Dumbbell className="text-sage-600" size={28} />
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
+                    <Dumbbell className="text-sage-600" size={28} />
+                  </div>
+                  <h4 className="font-serif text-3xl text-gray-900">
+                    Tu Plan
+                  </h4>
                 </div>
-                <h4 className="font-serif text-3xl text-gray-900">
-                  Tu Plan
-                </h4>
+                <div className="text-right">
+                  <div className="text-3xl font-bold text-sage-600">$3.500</div>
+                  <div className="text-sm text-gray-500">UYU</div>
+                </div>
               </div>
 
               <div className="space-y-6">
@@ -189,13 +199,19 @@ export default function Programas() {
 
             {/* Plan Base */}
             <div className="bg-beige-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
-                  <Dumbbell className="text-sage-600" size={28} />
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-14 h-14 bg-sage-100 rounded-full flex items-center justify-center">
+                    <Dumbbell className="text-sage-600" size={28} />
+                  </div>
+                  <h4 className="font-serif text-3xl text-gray-900">
+                    Plan Base
+                  </h4>
                 </div>
-                <h4 className="font-serif text-3xl text-gray-900">
-                  Plan Base
-                </h4>
+                <div className="text-right">
+                  <div className="text-3xl font-bold text-sage-600">$2.500</div>
+                  <div className="text-sm text-gray-500">UYU</div>
+                </div>
               </div>
 
               <div className="space-y-6">

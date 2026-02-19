@@ -6,28 +6,23 @@ import Image from 'next/image'
 export default function Testimonios() {
   const testimonios = [
     {
-      text: 'Antes sentía que vivía peleada con mi cuerpo. Hoy puedo mirarme con más amor, entrenar sin castigarme y disfrutar de moverme.',
-      nombre: 'María',
+      text: 'La verdad me encantó el acompañamiento que se tuvo y lo que me mostró este plan es que se puede comer bien, quedar satisfecha sin abusar de los alimentos ni comer en excesos. Me ayudó a controlar los antojos, aunque a veces cuesta, y en el tema del ejercicio que no es necesario hacer 2 horas ni 5 días a la semana. Me ayudó a disfrutar de ambas cosas.',
+      nombre: 'Participante 1',
       rol: 'Programa ÍNTEGRO',
     },
     {
-      text: 'Sofi no solo me ayudó con el entrenamiento, también me acompañó a sanar mi relación con la comida. Fue un proceso transformador desde adentro.',
-      nombre: 'Laura',
-      rol: 'Plan personalizado',
-    },
-    {
-      text: 'Encontré en este espacio algo más que fitness: encontré paz, propósito y una forma de cuidarme que honra quién soy realmente.',
-      nombre: 'Camila',
+      text: 'Este mes al cual pertenecí al plan de Integro, puedo decir que en honor el nombre, he integrado cierto hábitos a mis días que no los tenía. Si bien soy sincera que no logré cumplirlos al pie de la letra; he brindado mi tiempo disponible a cumplir mi compromiso con íntegro. De todas formas, todo lo que nos han brindado fue de un excelente nivel, no solo por la comunicación 24/7; sino por el alentarnos a seguir y superarnos.',
+      nombre: 'Participante 2',
       rol: 'Programa ÍNTEGRO',
     },
     {
-      text: 'Me encanta cómo Sofi integra la fe en todo. Es lo que necesitaba: un acompañamiento que respeta mis valores y mi cuerpo.',
-      nombre: 'Ana',
-      rol: 'Plan Full body',
+      text: 'Me gusto mucho el desafío, comi mas saludable y me sentí acompañada ya que compartíamos nuestras comidas/días de ejercicio. Me costo bastante la parte de ejercicio pero trate al menos de hacer algo dos veces por semana. Gracias!!!',
+      nombre: 'Participante 3',
+      rol: 'Programa ÍNTEGRO',
     },
     {
-      text: 'Aprendí que el fitness puede ser amable. Ya no me exijo hasta el cansancio, ahora me muevo con intención y amor.',
-      nombre: 'Sofía',
+      text: 'Me encantoo! Me re sirvio para estar todo el mes motivada con ir al gimnasio y con las comidas. Las rutinas de gimnasio me re coparon y pude cumplir re bien con todo. Con la comida, que es lo que mas me estaba costando, la verdad que estoy re contenta porque mejore pila con eso. Me recontra sirvio para tener muchiisima menos ansiedad por comer. Y en todo el mes no me dieron atracones asi que la verdad que recontra contenta!',
+      nombre: 'Participante 4',
       rol: 'Programa ÍNTEGRO',
     },
   ]
