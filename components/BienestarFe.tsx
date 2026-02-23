@@ -8,7 +8,8 @@ export default function BienestarFe() {
       icon: Heart,
       title: 'Guía 1 – Conocer a Dios',
       description: 'Un camino para acercarte a Él con sencillez y verdad.',
-      status: 'Próximamente',
+      status: 'Disponible',
+      pdfUrl: '/assets/CONOCER-A-DIOS.pdf.pdf',
     },
     {
       icon: Sprout,
@@ -48,7 +49,11 @@ export default function BienestarFe() {
               >
                 {/* Status Badge */}
                 <div className="absolute top-4 right-4">
-                  <span className="inline-block px-3 py-1 bg-beige-100 text-beige-600 text-xs font-medium rounded-full">
+                  <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
+                    guia.status === 'Disponible' 
+                      ? 'bg-green-100 text-green-700' 
+                      : 'bg-beige-100 text-beige-600'
+                  }`}>
                     {guia.status}
                   </span>
                 </div>
@@ -62,9 +67,23 @@ export default function BienestarFe() {
                 <h3 className="font-serif text-2xl text-gray-900 mb-3">
                   {guia.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-6">
                   {guia.description}
                 </p>
+
+                {/* Download Button */}
+                {guia.pdfUrl && (
+                  <a
+                    href={guia.pdfUrl}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-sage-600 text-white rounded-full hover:bg-sage-700 transition-all duration-300 font-medium shadow-md hover:shadow-lg"
+                  >
+                    <ArrowRight size={18} />
+                    Descargar guía
+                  </a>
+                )}
               </div>
             )
           })}
