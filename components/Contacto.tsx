@@ -68,7 +68,7 @@ export default function Contacto() {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-600">
-            © 2024 Sofía Tarela. Todos los derechos reservados.
+            © 2026 Sofía Tarela. Todos los derechos reservados.
           </p>
         </div>
       </div>
